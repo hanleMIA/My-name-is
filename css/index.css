@@ -1,0 +1,103 @@
+html, body {
+    margin:0;
+}
+body{
+    margin-top: 400px;
+}
+header {
+    position: fixed; /*고정*/
+    height: 100vh;
+    width: 100vw;
+    top:0;
+}
+.header-background{
+    position: absolute;
+    background-size: cover;
+    background-image: url('../images/미스포츈.jpg');
+    background-position: center;
+    filter: blur(3px);
+    height: 100vh;
+    width: 100vw;
+}
+.header-title-box{
+    position: absolute;/*겹치기 가능*/
+    height: 400px;
+    width: 100vw;
+}
+
+.header-background-black{
+    position: absolute;
+    background-color: rgba(147, 138, 155, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.header-title{
+    position: absolute;
+    color: white;
+    font-size: 30pt;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+section{
+    position: relative;
+    background-color: white;
+    width: 80%;
+    max-width: 966px;
+    left: 50%;
+    transform:translate(-50%,-50px);
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(49, 31, 31, 0.15); /* x값, y값, 스프레드*/
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.15);
+    box-shadow: 2px 0px 16px rgba(0,0,0,0.15); 
+    box-shadow: 2px 2px 32px rgba(0,0,0,0.15);
+    box-shadow: 2px 2px 64px rgba(0,0,0,0.15);   
+}
+
+footer{
+    position: relative;
+    height: 100px;
+}
+
+footer span{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+article{
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid rosybrown;
+    padding:25px 0;
+}
+
+article:last-child{
+    margin-bottom: 0px;
+    border-bottom: 0;
+}
+.article-container{
+    position: relative;   
+    width: 80%; 
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.article-title{
+    width: 100%;
+    position: relative;
+    display: block;
+    font-size: 30pt;
+}
+
+.article-line{
+    height: 1px; /*공간을 만듬*/
+    width: 100%;
+    border-bottom: 3px solid rgb(200,200,200);
+    margin:10px 0;
+}
+
+
